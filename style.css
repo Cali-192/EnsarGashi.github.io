@@ -1,0 +1,522 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6rem;
+    font-size: 18px;
+}
+
+.eg-body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.eg-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.eg-header {
+    padding: 2em 0;
+    background: rgb(5, 56, 56);
+}
+
+.eg-header-title {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.eg-mobile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eg-hamburger-menu {
+    background-color: rgba(169, 169, 169, 0.61);
+    padding: .5em .9em;
+    border-radius: 200px;
+    color: white;
+}
+
+.eg-hamburger-menu:hover {
+    background-color: aqua;
+    transition: .6s;
+    font-size: 1.6rem;
+    margin-bottom: .5em;
+}
+
+.eg-nav {
+    text-align: center;
+    display: none;
+}
+
+.eg-show {
+    display: block;
+}
+
+.eg-nav-item {
+    text-decoration: none;
+    margin-bottom: .6em;
+    list-style: none
+    ;
+}
+
+.eg-nav-link {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+
+.eg-nav-link:hover {
+    color: aqua;
+    font-size: 1.3rem;
+    transition: .4s;
+}
+
+.eg-main {
+    padding: 3em 0;
+}
+
+.eg-main-text {
+    margin-bottom: 2em;
+    text-align: center;
+    color: rgba(243, 159, 56, 0.76);
+}
+
+.eg-main-column {
+    border: 1px solid rgb(153, 146, 146);
+    padding: 2em .6em;
+    border-radius: 60px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.eg-main-column:hover {
+    background-color: rgb(6, 37, 37);
+    cursor: pointer;
+    transition: .6s;
+    color: white;
+}
+
+.eg-projects-section {
+    display: block;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eg-projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eg-project-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.eg-project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.eg-project-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.eg-project-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.eg-project-box a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.eg-project-box a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.eg-btn-start {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.eg-btn-start:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .eg-projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.eg-about-me {
+    padding: 50px 60px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.eg-about-me h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.eg-about-me p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.eg-about-me:hover {
+    background-color: rgb(6, 37, 37);
+    color: #fff;
+    cursor: pointer;
+}
+
+.eg-about-me:hover h3 {
+    color: #fff;
+}
+
+.eg-about-me:hover p {
+    color: #fff;
+}
+
+.eg-about-me::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.eg-question-button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.eg-centered-question-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.eg-tips-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.eg-about-me:hover::before {
+    border-color: #fff;
+}
+
+@media(min-width: 768px) {
+    .eg-hamburger-menu {
+        display: none;
+    }
+
+    .eg-nav {
+        display: flex;
+        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+        gap: 2.6em;
+        margin-bottom: -.5em;
+        justify-content: flex-end;
+    }
+
+    .eg-header-title {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .eg-nav-link {
+        font-size: 1.4rem;
+    }
+
+    .eg-row {
+        display: flex;
+        align-items: center;
+    }
+
+    .eg-main-title {
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+
+    .eg-main-text {}
+
+    .eg-main-button,
+    .eg-main-paragraph {
+        font-size: 1.6rem;
+        margin-bottom: .6em;
+    }
+
+    .eg-main-column {
+        width: 70%;
+        margin: 0 auto;
+        padding: 3em 0;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .eg-main-column h2 {
+        margin-bottom: .6em;
+    }
+
+    .eg-main-column p,
+    h2 {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .eg-about-me {
+        width: 70%;
+        padding: 3em 0;
+        border-radius: 50px;
+    }
+
+    .eg-about-me h3 {
+        margin-bottom: .6em;
+    }
+
+    .eg-about-me p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .eg-projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eg-projects {
+        gap: 2em;
+    }
+
+    .eg-projects:nth-of-type(2) {
+        width: 80%;
+    }
+
+  
+    .eg-question-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .eg-question-button {
+        display: inline-block;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .eg-question-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .eg-tips-section {
+        background-color: #f7f7f7;
+        padding: 50px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .eg-tips-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+   
+}
+.eg-rate-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.eg-rate-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.eg-rate-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.eg-rate-table th, .eg-rate-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.eg-rate-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.eg-rate-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.eg-rate-table td i {
+    color: #FFD700;
+}
+
+.eg-rate-form {
+    text-align: center;
+    margin-top: 20px;
+}
+.eg-rating-stars {
+    font-size: 24px;
+    color: gold;
+    cursor: pointer;
+}
+
+.eg-star:hover {
+    color: #FF8C00;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .eg-rate-table th, .eg-rate-table td {
+        padding: 10px;
+    }
+
+    .eg-rating-stars {
+        font-size: 1.5rem;
+    }
+}
+.eg-rate-message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.eg-main {
+    height: 2000px; 
+}
+
+.eg-scrollTopBtn {
+    display: none; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 27px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.eg-scrollTopBtn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+.eg-star {
+    font-size: 24px;
+    color: gold;
+    cursor: pointer;
+    margin: 0 5px;
+}
+#rate-message {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+}
+

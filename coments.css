@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.eg-testimonial-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.eg-section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.eg-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.eg-testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+}
+
+.eg-testimonial:hover {
+  border-color: #ff9800;
+  transition: 0.4s ease;
+}
+
+.eg-testimonial-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.eg-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.eg-author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ff9800;
+  object-fit: cover;
+}
+
+.eg-author-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.eg-author-role {
+  font-size: 0.9rem;
+  color: #888;
+}
+.eg-thank-you-message {
+  margin: 40px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  border: 3px solid #ff9800;
+}
+
+.eg-thank-you-message h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.eg-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.eg-social-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.eg-social-icon:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+
+.eg-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.eg-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eg-footer-info, .eg-footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.eg-footer-info h2, .eg-footer-social h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.eg-footer-info p, .eg-footer-social p {
+  font-size: 1em;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.eg-footer-info i, .eg-footer-social i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.eg-social-icons-footer {
+  display: flex;
+  gap: 15px;
+}
+
+.eg-social-link {
+  color: #fff;
+  font-size: 1.5em;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.eg-social-link:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+.eg-footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.eg-social-icon {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.eg-footer {
+  width: 100%; 
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .eg-section-title {
+    font-size: 2rem;
+  }
+
+  .eg-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .eg-testimonial {
+    padding: 15px;
+  }
+
+  .eg-author-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .eg-thank-you-message {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eg-section-title {
+    font-size: 1.8rem;
+  }
+
+  .eg-thank-you-message h3 {
+    font-size: 1.5rem;
+  }
+
+  .eg-footer {
+    text-align: center;
+  }
+
+  .eg-footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

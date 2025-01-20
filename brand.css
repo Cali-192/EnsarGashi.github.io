@@ -1,0 +1,121 @@
+.eg-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Sigurohet që faqja mbush të gjithë lartësinë e ekranit */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.eg-header {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.eg-header-title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.eg-about {
+  padding: 20px;
+  text-align: center;
+}
+
+.eg-about-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.eg-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.eg-gallery-item {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.eg-gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.eg-contact {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.eg-contact-text {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.eg-contact-link {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.eg-contact-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .eg-header-title {
+    font-size: 2em; /* Madhësia e titullit zvogëlohet për ekrane mesatare */
+  }
+
+  .eg-about-text {
+    font-size: 1em; /* Teksti rregullohet për lexueshmëri */
+    padding: 10px;  /* Shto pak hapësirë rreth përmbajtjes */
+    line-height: 1.5;
+  }
+
+  .eg-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Përshtatje më e ngushtë për kolonat */
+    gap: 10px; /* Zvogëlo hapësirën mes artikujve */
+  }
+
+  .eg-contact-text {
+    font-size: 1em; /* Mbështetje për tekstin e kontaktit */
+    padding: 10px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .eg-header-title {
+    font-size: 1.5em; /* Titulli zvogëlohet më tej për ekranet e vogla */
+  }
+
+  .eg-about-text {
+    font-size: 0.9em; /* Teksti rregullohet më tej për madhësi të vogël */
+    line-height: 1.4;
+    padding: 8px;
+  }
+
+  .eg-contact-text {
+    font-size: 0.9em; /* Kontakti është më i kompakt për ekrane të vogla */
+    padding: 8px;
+  }
+
+  .eg-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Galeria bëhet më kompakte */
+    gap: 8px;
+  }
+}
+
+        

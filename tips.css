@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.eg-container {
+    display: flex;
+    justify-content: center; /* Qendron kutitë horizontalisht */
+    align-items: center;     /* Qendron kutitë vertikalisht */
+    gap: 30px;               /* Hapsira mes kutive */
+    margin-top: 50px;        /* Distancë nga pjesa e sipërme e faqes */
+    flex-wrap: wrap;         /* Kutitë do të mbështillen nëse ekrani është i vogël */
+    width: 100%;     
+}
+
+.eg-header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.eg-header-content {
+    display: flex;
+    align-items: center; /* Vendos të dy elementët në mes vertikalisht */
+    justify-content: center; /* Qendron të dy elementët horizontalisht */
+    gap: 20px; /* Hapsira mes titullit dhe fjalës */
+    flex-wrap: wrap; /* Mbështjell elementët nëse ekrani është i vogël */
+    text-align: left;
+}
+
+.eg-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.eg-header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.eg-section-title, .eg-cta-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.eg-tips-introduction {
+    padding: 50px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.eg-intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.eg-tips-list {
+    display: flex;
+    justify-content: center; /* Qendron kutitë në qendër horizontalisht */
+    align-items: center;     /* Qendron kutitë në qendër vertikalisht */
+    gap: 30px;
+    margin-top: -30px; /* Shto këtë për t'i ngritur kutitë */
+    margin-bottom: 50px; /
+}
+
+.eg-tip-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+}
+
+.eg-tip-card:hover {
+    transform: translateY(-10px);
+}
+
+.eg-tip-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.eg-tip-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.eg-cta-section {
+    background-color: #007BFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.eg-cta-btn {
+    background-color: #fff;
+    color: #007BFF;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.eg-cta-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .eg-tips-list {
+        grid-template-columns: 1fr;
+    }
+}

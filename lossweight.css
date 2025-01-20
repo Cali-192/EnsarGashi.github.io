@@ -1,0 +1,239 @@
+body.eg-body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.eg-transformations h1{
+ text-align: center;
+}
+
+.eg-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 25px ;
+}
+
+.eg-box {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+ 
+}
+
+.eg-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.eg-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.eg-box .eg-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.eg-box .eg-content h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.eg-box .eg-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.eg-transformations-section {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.eg-transformations-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.eg-cards-section {
+  margin-top: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.eg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f4f4f4; 
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.eg-mode-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.eg-mode-button img {
+  width: 30px;
+  height: 30px;
+}
+
+#eg-slider {
+  width: 300px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #ddd;
+  outline: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#eg-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff; 
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#eg-slider:hover::-webkit-slider-thumb {
+  background: #0056b3;
+}
+
+
+body.eg-body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(250, 10%, var(--brightnessBg-eg));
+  font-family: sans-serif;
+  font-family: "Popppins", sans-serif;
+}
+
+
+.eg-icon {
+  width: 10px !important;
+  height: 5px !important;
+  object-fit: contain;
+}
+.eg-wrapper {
+  margin-left: 60em;
+  padding: 2em 0;
+  width: 30%;
+}
+
+.eg-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.eg-social-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.eg-social-icon:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.eg-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.eg-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eg-footer-info, .eg-footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.eg-footer-info h2, .eg-footer-social h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.eg-footer-info p, .eg-footer-social p {
+  font-size: 1em;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.eg-footer-info i, .eg-footer-social i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.eg-social-icons-footer {
+  display: flex;
+  gap: 15px;
+}
+
+.eg-social-link {
+  color: #fff;
+  font-size: 1.5em;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.eg-social-link:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+.eg-footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+}
+
+
+  

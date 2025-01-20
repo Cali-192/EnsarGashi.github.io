@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.eg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eg-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.eg-col-md-4,
+.eg-col-sm-6 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+}
+
+.eg-product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.eg-product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.eg-product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.eg-product-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.eg-product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.eg-product-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.eg-text-center {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.eg-products-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.eg-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.eg-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,48 @@
+
+.eg-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    font-family: Arial, sans-serif;
+}
+  
+.eg-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eg-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.eg-text-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.eg-text-overlay h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.eg-text-overlay p {
+    font-size: 18px;
+}
